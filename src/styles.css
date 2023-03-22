@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 50px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+h1{
+    text-align: center;
+    margin: 15px;
+    color: antiquewhite;
+    text-shadow: 0px 3px 5px rgb(0, 0, 0);
+}
+
+h3{
+    font-weight: 600;
+}
+
+button{
+    margin: 50px 5px 10px 5px ;
+    padding: 8px 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    transition-duration: 500ms;
+}
+
+button:hover{
+    cursor: pointer;
+    translate: 0px -3px;
+    box-shadow: 0px 3px 5px gray;
+    transition-duration: 500ms;
+    filter: sepia(80%);
+}
+
+#apagar{    
+    background-color: red;
+    color: white;
+}
+
+#editar{    
+    background-color: gold;
+    color: black;
+}
+
+#adicionar{    
+    background-color: rgb(111, 255, 0);
+    color: black;
+}
+
+#item{
+    border-radius: 20px;
+    box-shadow: 8px 8px 30px rgb(0, 0, 0);
+    padding: 15px;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    width: 80%;
+}
+
+body{
+    background-color: darkslategrey;
+}
+
+.form{
+    width: 20%;
+}
+
+form {
+    color: antiquewhite;
+    text-shadow: 0px 3px 5px rgb(0, 0, 0);
+}
+
+input{
+    color: antiquewhite;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    outline: none!important;
+}
+
+input:focus{
+    border-bottom: 2px solid rgb(75, 251, 0);
+    transition-duration: 500ms;
+    transform: 10px;
+}
+
