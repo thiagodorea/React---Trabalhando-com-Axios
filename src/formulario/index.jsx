@@ -86,7 +86,7 @@ export default function Formulario(){
 
     return(
         <>
-            <h1>Formulario</h1>
+            <h1>Formulário</h1>
             <div className="wrap">
                 <div className="form">
                     <form>
