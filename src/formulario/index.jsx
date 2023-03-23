@@ -90,14 +90,26 @@ export default function Formulario(){
             <div className="wrap">
                 <div className="form">
                     <form>
-                        <p>Nome:</p>
-                        <input type="text" onChange={(event) => setNome(event.target.value)} value={nome} />
-                        <p>Matricula:</p>
-                        <input type="text" onChange={(event) => setMatricula(event.target.value)} value={matricula} />
-                        <p>Curso:</p>
-                        <input type="text" onChange={(event) => setCurso(event.target.value)} value={curso} />
-                        <p>Bimestre:</p>
-                        <input type="text" onChange={(event) => setBimestre(event.target.value)} value={bimestre} />
+                        <div>
+                            <label>Nome:</label>
+                            <input type="text" onChange={(event) => setNome(event.target.value)} value={nome} />
+                            <span className="bar"></span>
+                        </div>
+                        <div>
+                            <label>Matricula:</label>
+                            <input type="text" onChange={(event) => setMatricula(event.target.value)} value={matricula} />
+                            <span className="bar"></span>
+                        </div>
+                        <div>
+                            <label>Curso:</label>
+                            <input type="text" onChange={(event) => setCurso(event.target.value)} value={curso} />
+                            <span className="bar"></span>
+                        </div>
+                        <div>
+                            <label>Bimestre:</label>
+                            <input type="text" onChange={(event) => setBimestre(event.target.value)} value={bimestre} />
+                            <span className="bar"></span>
+                        </div>
                         <button id="adicionar" onClick={() => idAluno ? salvarEditar(event) : adicionar(event)}>{idAluno ? "Salvar" : "Adicionar"}</button>
                         <button id="cancelar" onClick={() => cancelar()}>Cancelar</button>
                     </form>
